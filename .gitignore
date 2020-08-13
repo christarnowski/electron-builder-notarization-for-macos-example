@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# JetBrains
+.idea
+
+#
+dist
+node_modules
+
+# Compiled source
+./*.js
+./*.js.map
+
+# Yarn
+./yarn-error.log

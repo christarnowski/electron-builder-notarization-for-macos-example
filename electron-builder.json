@@ -1,0 +1,22 @@
+{
+  "appId": "com.christarnowski.blog.electron.notarization",
+  "productName": "Electron Notarization Example",
+  "directories": {
+    "buildResources": "resources",
+    "output": "dist/"
+  },
+  "extraMetadata": {
+    "main": "main.js"
+  },
+  "artifactName": "${productName}-${version}.${ext}",
+  "afterSign": "./resources/scripts/notarize.js",
+  "mac": {
+    "target": [
+      "default"
+    ],
+    "entitlements": "resources/mac/entitlements.mac.plist",
+    "entitlementsInherit": "resources/mac/entitlements.mac.plist",
+    "hardenedRuntime": true,
+    "gatekeeperAssess": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es7"
+    ],
+    "strict": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "target": "es2020"
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "electron-notarization-example",
+  "version": "1.0.0",
+  "scripts": {
+    "clean:build": "rm -Rf ./build",
+    "build": "yarn && tsc main.ts",
+    "release:package": "ts-node scripts/patch-electron-notarize.ts && node node_modules/electron-builder/out/cli/cli.js build -p never"
+  },
+  "devDependencies": {
+    "electron": "9.2.0",
+    "electron-builder": "22.8.0",
+    "electron-notarize": "1.0.0",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.7"
+  }
+}
